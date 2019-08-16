@@ -60,7 +60,8 @@ class Hanghoa {
     }
 
     public void xuat() {
-        System.out.println(" ma hang = " + getMahang() + "\t" + "ten hang = " + getTenhang() + "\t" + "don gia = " + getDoniga());
+        System.out.println(
+                " ma hang = " + getMahang() + "\t" + "ten hang = " + getTenhang() + "\t" + "don gia = " + getDoniga());
     }
 }
 
@@ -131,7 +132,8 @@ class hangDM extends Hanghoa {
     @Override
     public void xuat() {
         super.xuat();
-        System.out.println(" thoi gian ban hang = " + getThoigianbh() + "\t" + "dien ap = " + getDienap() + "\t" + "cong suat = " + getCongsuat());
+        System.out.println(" thoi gian ban hang = " + getThoigianbh() + "\t" + "dien ap = " + getDienap() + "\t"
+                + "cong suat = " + getCongsuat());
     }
 }
 
@@ -191,10 +193,11 @@ class hangTP extends Hanghoa {
         System.out.println(" ngay san xuat = " + getNgaysx() + "\t" + " ngayHH = " + getNgayhh());
     }
 }
+
 class tuan5_bai1 {
 
     public static void main(String[] args) {
-        Hanghoa p1 = new hangDM(); //tinh da hinh
+        Hanghoa p1 = new hangDM(); // tinh da hinh
         Hanghoa p2 = new hangTP();
         p1.nhap();
         p1.xuat();
