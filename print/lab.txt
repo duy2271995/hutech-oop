@@ -1,0 +1,1616 @@
+import java.util.Scanner;
+
+public class tuan2_bai1 {
+
+    private String maso;
+    private String hoten;
+    private float dtb;
+
+    public tuan2_bai1() {
+        String mso = null;
+        String hte = null;
+        float dt = 0;
+        this.maso = mso;
+        this.hoten = hte;
+        this.dtb = dt;
+    }
+
+    public String getMaso() {
+        return maso;
+    }
+
+    public void setMaso(String maso) {
+        this.maso = maso;
+    }
+
+    public String getHoten() {
+        return hoten;
+    }
+
+    public void setHoten(String hoten) {
+        this.hoten = hoten;
+    }
+
+    public float getDtb() {
+        return dtb;
+    }
+
+    public void setDtb(float dtb) {
+        this.dtb = dtb;
+    }
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap vao ho ten");
+        hoten = sc.nextLine();
+        setHoten(hoten);
+        System.out.println("nhap vao maso");
+        maso = sc.nextLine();
+        setMaso(maso);
+        System.out.println("nhap vao DTB");
+        dtb = sc.nextFloat();
+        setDtb(dtb);
+    }
+
+    public void output() {
+        System.out.println("ho ten : " + getHoten() + "\t" + "ma so : " + getMaso() + "\t" + "diem trung binh " + getDtb());
+    }
+
+    public void rank() {
+        if (dtb < 5) {
+            System.out.println("xep loai yeu");
+        } else if (dtb < 7) {
+            System.out.println("xep loai trung binh");
+        } else if (dtb < 8) {
+            System.out.println("xep loai kha");
+        } else {
+            System.out.println(" xep loai gioi ");
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            tuan2_bai1 p1 = new tuan2_bai1();
+            Scanner sc = new Scanner(System.in);
+            p1.input();
+            p1.output();
+            p1.rank();
+            String htmoi = " ";
+            System.out.println("nhap ten can doi ");
+            htmoi = sc.nextLine();
+            p1.setHoten(htmoi);
+            System.out.println("ho ten cua sinh vien sau khi sua :" + p1.getHoten());
+            p1.output();
+        } catch (Exception e) {
+            System.out.println("bi loi" + e.toString());
+        }
+    }
+}
+
+
+    public float getDtb() {
+        return dtb;
+    }
+
+    public void setDtb(float dtb) {
+        this.dtb = dtb;
+    }
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap vao ho ten");
+        hoten = sc.nextLine();
+        setHoten(hoten);
+        System.out.println("nhap vao maso");
+        maso = sc.nextLine();
+        setMaso(maso);
+        System.out.println("nhap vao DTB");
+        dtb = sc.nextFloat();
+        setDtb(dtb);
+    }
+
+    public void output() {
+        System.out.println("ho ten : " + getHoten() + "\t" + "ma so : " + getMaso() + "\t" + "diem trung binh " + getDtb());
+    }
+
+    public void rank() {
+        if (dtb < 5) {
+            System.out.println("xep loai yeu");
+        } else if (dtb < 7) {
+            System.out.println("xep loai trung binh");
+        } else if (dtb < 8) {
+            System.out.println("xep loai kha");
+        } else {
+            System.out.println(" xep loai gioi ");
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            tuan2_bai1 p1 = new tuan2_bai1();
+            Scanner sc = new Scanner(System.in);
+            p1.input();
+            p1.output();
+            p1.rank();
+            String htmoi = " ";
+            System.out.println("nhap ten can doi ");
+            htmoi = sc.nextLine();
+            p1.setHoten(htmoi);
+            System.out.println("ho ten cua sinh vien sau khi sua :" + p1.getHoten());
+            p1.output();
+        } catch (Exception e) {
+            System.out.println("bi loi" + e.toString());
+        }
+    }
+}
+
+import java.util.Scanner;
+
+public class tuan2_bai2 {
+
+    private String maso;
+    private String hoten;
+    private float dtb;
+
+    public tuan2_bai2() {
+        String mso = null;
+        String hte = null;
+        float dt = 0;
+        this.maso = mso;
+        this.hoten = hte;
+        this.dtb = dt;
+    }
+
+    public String getMaso() {
+        return maso;
+    }
+
+    public void setMaso(String maso) {
+        this.maso = maso;
+    }
+
+    public String getHoten() {
+        return hoten;
+    }
+
+    public void setHoten(String hoten) {
+        this.hoten = hoten;
+    }
+
+    public float getDtb() {
+        return dtb;
+    }
+
+    public void setDtb(float dtb) {
+        this.dtb = dtb;
+    }
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap vao ho ten");
+        hoten = sc.nextLine();
+        setHoten(hoten);
+        System.out.println("nhap vao maso");
+        maso = sc.nextLine();
+        setMaso(maso);
+        System.out.println("nhap vao DTB");
+        dtb = sc.nextFloat();
+        setDtb(dtb);
+    }
+
+    public void output() {
+        System.out.println(
+                "ho ten : " + getHoten() + "\t" + "ma so : " + getMaso() + "\t" + "diem trung binh " + getDtb());
+    }
+
+    public static void main(String[] args) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            tuan2_bai2[] p1 = new tuan2_bai2[20];
+            int n = 0;
+            System.out.println("nhap so luong hoc sinh ");
+            n = sc.nextInt();
+            System.out.println("nhap thong tin tung hoc sinh ");
+            for (int i = 1; i <= n; i++) {
+                System.out.println(" nhap vao sinh vien thu " + i);
+                p1[i] = new tuan2_bai2();
+                p1[i].input();
+            }
+            System.out.println("danh sach sinh vien la : ");
+            for (int i = 1; i <= n; i++) {
+                p1[i].output();
+            }
+        } catch (Exception e) {
+            System.out.println("bi loi" + e.toString());
+        }
+
+    }
+}
+
+import java.util.Scanner;
+
+public class tuan2_bai3 {
+
+    private String maso;
+    private String hoten;
+    private float dtb;
+
+    public tuan2_bai3() {
+        String mso = null;
+        String hte = null;
+        float dt = 0;
+        this.maso = mso;
+        this.hoten = hte;
+        this.dtb = dt;
+    }
+
+    public String getMaso() {
+        return maso;
+    }
+
+    public void setMaso(String maso) {
+        this.maso = maso;
+    }
+
+    public String getHoten() {
+        return hoten;
+    }
+
+    public void setHoten(String hoten) {
+        this.hoten = hoten;
+    }
+
+    public float getDtb() {
+        return dtb;
+    }
+
+    public void setDtb(float dtb) {
+        this.dtb = dtb;
+    }
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap vao ho ten");
+        hoten = sc.nextLine();
+        setHoten(hoten);
+        System.out.println("nhap vao maso");
+        maso = sc.nextLine();
+        setMaso(maso);
+        System.out.println("nhap vao DTB");
+        dtb = sc.nextFloat();
+        setDtb(dtb);
+    }
+
+    public void output() {
+        System.out.println(
+                "ho ten : " + getHoten() + "\t" + "ma so : " + getMaso() + "\t" + "diem trung binh " + getDtb());
+    }
+
+    private int s1;
+    tuan2_bai3[] ds = new tuan2_bai3[20];
+
+    public void nhapds() {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("nhap vao so luong hoc sinh");
+            s1 = sc.nextInt();
+
+            for (int i = 1; i <= s1; i++) {
+                System.out.println("nap vao hoc sinh thu " + i);
+                ds[i] = new tuan2_bai3();
+                ds[i].input();
+            }
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    public void xuatds() {
+        System.out.println("danh sach hoc sinh la : ");
+        for (int i = 1; i <= s1; i++) {
+            ds[i].output();
+        }
+    }
+
+    public void sapxep() {
+        System.out.println("sau khi sap xep giam dan ");
+        for (int i = 1; i <= s1; i++) {
+            for (int j = i + 1; j <= s1; j++) {
+                if (ds[i].dtb < ds[j].dtb) {
+                    tuan2_bai3 temp = new tuan2_bai3();
+                    temp = ds[i];
+                    ds[i] = ds[j];
+                    ds[j] = temp;
+                }
+            }
+        }
+
+    }
+
+    public static void main(String[] args) {
+        tuan2_bai3 p1 = new tuan2_bai3();
+        p1.nhapds();
+        p1.xuatds();
+        p1.sapxep();
+        p1.xuatds();
+    }
+}
+
+import java.util.Scanner;
+
+public class tuan2_bai4 {
+
+    private int n;
+    private int array[] = new int[100];
+
+    Scanner sc = new Scanner(System.in);
+
+    public void input() {
+        try {
+            System.out.println("nhap so phan tu mang ");
+            n = sc.nextInt();
+            System.out.println("Nhap cac phan tu mang: ");
+            for (int i = 0; i < n; i++) {
+                System.out.print("nhap vao phan tu thu " + i + ": ");
+                array[i] = sc.nextInt();
+            }
+
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    public void output() {
+
+        System.out.println("\nmang sau khi nhap la: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(array[i] + "\t");
+        }
+    }
+
+    public void TBSL() {
+        int dem = 0;
+        int tong = 0;
+        int tb = 0;
+        for (int i = 0; i < n; i++) {
+            if (array[i] % 2 != 0) {
+
+                tong = tong + array[i];
+                dem++;
+            }
+            tb = tong / dem;
+        }
+        System.out.println("trung binh cac so le " + tb);
+    }
+
+    public void max() {
+        int max = array[0];
+        for (int i = 0; i < n; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            }
+
+        }
+        System.out.println("max = " + max);
+    }
+
+    public void sapxep() {
+        int temp = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (array[i] < array[j]) {
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        tuan2_bai4 p1 = new tuan2_bai4();
+        // tuan2_bai4[] p2 = new tuan2_bai4[100];
+        p1.input();
+        p1.output();
+        p1.TBSL();
+        p1.max();
+        p1.sapxep();
+        p1.output();
+    }
+}
+
+import java.util.Scanner;
+
+public class tuan3_bai1 {
+
+    private int tu;
+    private int mau;
+
+    public tuan3_bai1() {
+        tu = 0;
+        mau = 1;
+    }
+
+    public tuan3_bai1(int tu, int mau) {
+        super();
+        this.tu = tu;
+        this.mau = mau;
+    }
+
+    public tuan3_bai1(tuan3_bai1 p) {
+        this.tu = p.tu;
+        this.mau = p.mau;
+    }
+
+    public void nhapPS() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap tu so ");
+        tu = sc.nextInt();
+        System.out.println("nhap tu so ");
+        mau = sc.nextInt();
+    }
+
+    public void xuatPS() {
+        System.out.println(tu + "/" + mau);
+    }
+
+    public int getTu() {
+        return tu;
+    }
+
+    public void setTu(int tu) {
+        this.tu = tu;
+    }
+
+    public int getMau() {
+        return mau;
+    }
+
+    public void setMau(int mau) {
+        this.mau = mau;
+    }
+
+    public int timUSCLN(int a, int b) {
+        while (a != b) {
+            if (a > b) {
+                a -= b;
+            } else {
+                b -= a;
+            }
+        }
+        return a;
+    }
+
+    public void toiGiantuan3_bai1() {
+        int i = timUSCLN(this.getTu(), this.getMau());
+        this.setTu(this.getTu() / i);
+        this.setMau(this.getMau() / i);
+    }
+
+    public void congtuan3_bai1(tuan3_bai1 ps) {
+        int ts = this.getTu() * ps.getMau() + ps.getTu() * this.getMau();
+        int ms = this.getMau() * ps.getMau();
+        tuan3_bai1 tuan3_bai1Tong = new tuan3_bai1(ts, ms);
+        tuan3_bai1Tong.toiGiantuan3_bai1();
+        System.out.println("Tổng hai phân số = " + tuan3_bai1Tong.tu + "/" + tuan3_bai1Tong.mau);
+    }
+
+    public void trutuan3_bai1(tuan3_bai1 ps) {
+        int ts = this.getTu() * ps.getMau() - ps.getTu() * this.getMau();
+        int ms = this.getMau() * ps.getMau();
+        tuan3_bai1 tuan3_bai1Hieu = new tuan3_bai1(ts, ms);
+        tuan3_bai1Hieu.toiGiantuan3_bai1();
+        System.out.println("Hiệu hai phân số = " + tuan3_bai1Hieu.tu + "/" + tuan3_bai1Hieu.mau);
+    }
+
+    public void nhantuan3_bai1(tuan3_bai1 ps) {
+        int ts = this.getTu() * ps.getTu();
+        int ms = this.getMau() * ps.getMau();
+        tuan3_bai1 tuan3_bai1Tich = new tuan3_bai1(ts, ms);
+        tuan3_bai1Tich.toiGiantuan3_bai1();
+        System.out.println("Tích hai phân số = " + tuan3_bai1Tich.tu + "/" + tuan3_bai1Tich.mau);
+    }
+
+    public void chiatuan3_bai1(tuan3_bai1 ps) {
+        int ts = this.getTu() * ps.getMau();
+        int ms = this.getMau() * ps.getTu();
+        tuan3_bai1 tuan3_bai1Thuong = new tuan3_bai1(ts, ms);
+        tuan3_bai1Thuong.toiGiantuan3_bai1();
+        System.out.println("Thương hai phân số = " + tuan3_bai1Thuong.tu + "/" + tuan3_bai1Thuong.mau);
+    }
+
+    public static void main(String[] args) {
+        tuan3_bai1 p1 = new tuan3_bai1();
+        p1.xuatPS();
+        tuan3_bai1 p2 = new tuan3_bai1(4, 16);
+        p2.xuatPS();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap tu so ");
+        int t = sc.nextInt();
+        System.out.println("nhap tu so ");
+        int m = sc.nextInt();
+        tuan3_bai1 p3 = new tuan3_bai1(t, m);
+        p1.congtuan3_bai1(p3);
+        tuan3_bai1 p4 = new tuan3_bai1();
+        p4 = p3;
+        p4.nhantuan3_bai1(p2);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class tuan3_bai1 {
+
+    private int tu;
+    private int mau;
+
+    public tuan3_bai1() {
+        tu = 0;
+        mau = 1;
+    }
+
+    public tuan3_bai1(int tu, int mau) {
+        super();
+        this.tu = tu;
+        this.mau = mau;
+    }
+
+    public tuan3_bai1(tuan3_bai1 p) {
+        this.tu = p.tu;
+        this.mau = p.mau;
+    }
+
+    public void nhapPS() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap tu so ");
+        tu = sc.nextInt();
+        System.out.println("nhap tu so ");
+        mau = sc.nextInt();
+    }
+
+    public void xuatPS() {
+        System.out.println(tu + "/" + mau);
+    }
+
+    public int getTu() {
+        return tu;
+    }
+
+    public void setTu(int tu) {
+        this.tu = tu;
+    }
+
+    public int getMau() {
+        return mau;
+    }
+
+    public void setMau(int mau) {
+        this.mau = mau;
+    }
+
+    public int timUSCLN(int a, int b) {
+        while (a != b) {
+            if (a > b) {
+                a -= b;
+            } else {
+                b -= a;
+            }
+        }
+        return a;
+    }
+
+    public void toiGiantuan3_bai1() {
+        int i = timUSCLN(this.getTu(), this.getMau());
+        this.setTu(this.getTu() / i);
+        this.setMau(this.getMau() / i);
+    }
+
+    public void congtuan3_bai1(tuan3_bai1 ps) {
+        int ts = this.getTu() * ps.getMau() + ps.getTu() * this.getMau();
+        int ms = this.getMau() * ps.getMau();
+        tuan3_bai1 tuan3_bai1Tong = new tuan3_bai1(ts, ms);
+        tuan3_bai1Tong.toiGiantuan3_bai1();
+        System.out.println("Tổng hai phân số = " + tuan3_bai1Tong.tu + "/" + tuan3_bai1Tong.mau);
+    }
+
+    public void trutuan3_bai1(tuan3_bai1 ps) {
+        int ts = this.getTu() * ps.getMau() - ps.getTu() * this.getMau();
+        int ms = this.getMau() * ps.getMau();
+        tuan3_bai1 tuan3_bai1Hieu = new tuan3_bai1(ts, ms);
+        tuan3_bai1Hieu.toiGiantuan3_bai1();
+        System.out.println("Hiệu hai phân số = " + tuan3_bai1Hieu.tu + "/" + tuan3_bai1Hieu.mau);
+    }
+
+    public void nhantuan3_bai1(tuan3_bai1 ps) {
+        int ts = this.getTu() * ps.getTu();
+        int ms = this.getMau() * ps.getMau();
+        tuan3_bai1 tuan3_bai1Tich = new tuan3_bai1(ts, ms);
+        tuan3_bai1Tich.toiGiantuan3_bai1();
+        System.out.println("Tích hai phân số = " + tuan3_bai1Tich.tu + "/" + tuan3_bai1Tich.mau);
+    }
+
+    public void chiatuan3_bai1(tuan3_bai1 ps) {
+        int ts = this.getTu() * ps.getMau();
+        int ms = this.getMau() * ps.getTu();
+        tuan3_bai1 tuan3_bai1Thuong = new tuan3_bai1(ts, ms);
+        tuan3_bai1Thuong.toiGiantuan3_bai1();
+        System.out.println("Thương hai phân số = " + tuan3_bai1Thuong.tu + "/" + tuan3_bai1Thuong.mau);
+    }
+
+    public static void main(String[] args) {
+        tuan3_bai1 p1 = new tuan3_bai1();
+        p1.xuatPS();
+        tuan3_bai1 p2 = new tuan3_bai1(4, 16);
+        p2.xuatPS();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap tu so ");
+        int t = sc.nextInt();
+        System.out.println("nhap tu so ");
+        int m = sc.nextInt();
+        tuan3_bai1 p3 = new tuan3_bai1(t, m);
+        p1.congtuan3_bai1(p3);
+        tuan3_bai1 p4 = new tuan3_bai1();
+        p4 = p3;
+        p4.nhantuan3_bai1(p2);
+    }
+}
+
+import java.util.Scanner;
+
+public class tuan4_bai1 {
+    private int chieudai;
+    private int chieurong;
+    private int chuvi;
+    private int dientich;
+
+    public tuan4_bai1() {
+        chieudai = chieurong = 1;
+    }
+
+    public tuan4_bai1(int hinhvuong) {
+        this.chieudai = 5;
+        this.chieurong = 5;
+    }
+
+    public tuan4_bai1(int chieudai, int chieurong) {
+        this.chieudai = chieudai;
+        this.chieurong = chieurong;
+    }
+
+    public void nhap() {
+        try {
+            tuan4_bai1[] ds = new tuan4_bai1[20];
+            Scanner sc = new Scanner(System.in);
+            do {
+                System.out.println("Nhập chiều dài hình chữ nhật: ");
+                chieudai = sc.nextInt();
+                System.out.println("Nhập chiều rộng hình chữ nhật: ");
+                chieurong = sc.nextInt();
+            } while (chieudai < chieurong);
+
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+
+    }
+
+    public void hienThi() {
+        System.out.println("Chiều dài và chiều rộng của hình chữ nhật lần lượt là " + chieudai + " và " + chieurong);
+    }
+
+    public double tinhChuVi() {
+        chuvi = (chieudai + chieurong) * 2;
+        return chuvi;
+    }
+
+    public double tinhDienTich() {
+        dientich = chieurong * chieudai;
+        return dientich;
+    }
+
+    public void hienThiChuViVaDienTich() {
+        System.out.println("Chu vi hình chữ nhật = " + chuvi);
+        System.out.println("Diện tích hình chữ nhật = " + dientich);
+    }
+
+    public static void main(String[] args) {
+        tuan4_bai1 p1 = new tuan4_bai1();
+        p1.hienThi();
+        p1.tinhChuVi();
+        p1.tinhDienTich();
+        p1.hienThiChuViVaDienTich();
+        tuan4_bai1 p3 = new tuan4_bai1(6, 4);
+        p3.hienThi();
+        p3.tinhChuVi();
+        p3.tinhDienTich();
+        p3.hienThiChuViVaDienTich();
+    }
+}
+
+
+import java.util.Scanner;
+
+public class tuan4_bai2 {
+
+    private int chieudai;
+    private int chieurong;
+    private int chuvi = 0;
+    private int dientich = 0;
+    tuan4_bai2[] ds = new tuan4_bai2[20];
+    private int s1;
+
+    public tuan4_bai2() {
+        chieudai = chieurong = 0;
+    }
+
+    public tuan4_bai2(int hinhvuong) {
+        this.chieudai = 5;
+        this.chieurong = 5;
+    }
+
+    public tuan4_bai2(int chieudai, int chieurong) {
+        this.chieudai = chieudai;
+        this.chieurong = chieurong;
+    }
+
+    public int getChieudai() {
+        return chieudai;
+    }
+
+    public void setChieudai(int chieudai) {
+        this.chieudai = chieudai;
+    }
+
+    public int getChieurong() {
+        return chieurong;
+    }
+
+    public void setChieurong(int chieurong) {
+        this.chieurong = chieurong;
+    }
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap vao chieu dai");
+        chieudai = sc.nextInt();
+        setChieudai(chieudai);
+        System.out.println("nhap vao chieu rong");
+        chieurong = sc.nextInt();
+        setChieurong(chieurong);
+    }
+
+    public void output() {
+        System.out.println("chieu dai : " + getChieudai() + "\t" + "chieu rong : " + getChieurong());
+    }
+
+    public void nhap() {
+        try {
+            Scanner sc = new Scanner(System.in);
+            do {
+                System.out.println("nhap vao so hinh chu nhat");
+                s1 = sc.nextInt();
+
+                for (int i = 1; i <= s1; i++) {
+                    System.out.println("nap vao hinh chu nhat  thu " + i);
+                    ds[i] = new tuan4_bai2();
+                    ds[i].input();
+                }
+            } while (chieudai < chieurong);
+
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    public void xuatds() {
+        System.out.println("danh sach hinh chu nhat la : ");
+        for (int i = 1; i <= s1; i++) {
+            ds[i].output();
+        }
+    }
+
+    public void tinhChuVi() {
+        int i;
+        for (i = 1; i <= s1; i++) {
+            chuvi = (ds[i].chieudai + ds[i].chieurong) * 2;
+            System.out.println("Chu vi = " + chuvi);
+        }
+
+    }
+
+    public void tinhDienTich() {
+        for (int i = 1; i <= s1; i++) {
+            dientich = ds[i].chieurong * ds[i].chieudai;
+            System.out.println("Diện tích = " + dientich);
+        }
+    }
+
+    public static void main(String[] args) {
+        tuan4_bai2 p1 = new tuan4_bai2();
+        p1.nhap();
+        p1.xuatds();
+        p1.tinhChuVi();
+        p1.tinhDienTich();
+    }
+}
+
+
+import java.util.*;
+
+class Hanghoa {
+
+    protected String mahang;
+    protected String tenhang;
+    protected long doniga;
+
+    public Hanghoa() {
+        mahang = " ";
+        tenhang = " ";
+        doniga = 0;
+    }
+
+    public Hanghoa(String mahang, String tenhang, long doniga) {
+        this.mahang = mahang;
+        this.tenhang = tenhang;
+        this.doniga = doniga;
+    }
+
+    public String getMahang() {
+        return mahang;
+    }
+
+    public void setMahang(String mahang) {
+        this.mahang = mahang;
+    }
+
+    public String getTenhang() {
+        return tenhang;
+    }
+
+    public void setTenhang(String tenhang) {
+        this.tenhang = tenhang;
+    }
+
+    public long getDoniga() {
+        return doniga;
+    }
+
+    public void setDoniga(long doniga) {
+        this.doniga = doniga;
+    }
+
+    public void nhap() {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("nhap vao ma hang ");
+            mahang = sc.nextLine();
+            setMahang(mahang);
+            System.out.println("nhap vao ten hang ");
+            tenhang = sc.nextLine();
+            setTenhang(tenhang);
+            System.out.println("nhap vao don gia");
+            doniga = sc.nextInt();
+            setDoniga(doniga);
+        } catch (Exception e) {
+            System.out.println("bi loi" + e.toString());
+        }
+    }
+
+    public void xuat() {
+        System.out.println(
+                " ma hang = " + getMahang() + "\t" + "ten hang = " + getTenhang() + "\t" + "don gia = " + getDoniga());
+    }
+}
+
+class hangDM extends Hanghoa {
+
+    private int thoigianbh;
+    private int dienap;
+    private int congsuat;
+
+    public hangDM() {
+        super();
+        thoigianbh = 0;
+        dienap = 0;
+        congsuat = 0;
+    }
+
+    public hangDM(int thoigianbh, int dienap, int congsuat, String mahang, String tenhang, long doniga) {
+        super(mahang, tenhang, doniga);
+        this.thoigianbh = thoigianbh;
+        this.dienap = dienap;
+        this.congsuat = congsuat;
+    }
+
+    public int getThoigianbh() {
+        return thoigianbh;
+    }
+
+    public void setThoigianbh(int thoigianbh) {
+        this.thoigianbh = thoigianbh;
+    }
+
+    public int getDienap() {
+        return dienap;
+    }
+
+    public void setDienap(int dienap) {
+        this.dienap = dienap;
+    }
+
+    public int getCongsuat() {
+        return congsuat;
+    }
+
+    public void setCongsuat(int congsuat) {
+        this.congsuat = congsuat;
+    }
+
+    @Override
+    public void nhap() {
+        try {
+            System.out.println("nhap vao mat hang DIEN MAY");
+            super.nhap();
+            Scanner sc = new Scanner(System.in);
+            System.out.println("nhap vao thoi gian ban hang ");
+            thoigianbh = sc.nextInt();
+            setThoigianbh(thoigianbh);
+            System.out.println("nhap vao dien ap ");
+            dienap = sc.nextInt();
+            setDienap(dienap);
+            System.out.println("nhap vao cong suat ");
+            congsuat = sc.nextInt();
+            setCongsuat(congsuat);
+        } catch (Exception e) {
+            System.out.println("bi loi" + e.toString());
+        }
+    }
+
+    @Override
+    public void xuat() {
+        super.xuat();
+        System.out.println(" thoi gian ban hang = " + getThoigianbh() + "\t" + "dien ap = " + getDienap() + "\t"
+                + "cong suat = " + getCongsuat());
+    }
+}
+
+class hangTP extends Hanghoa {
+
+    private int ngaysx;
+    private int ngayhh;
+
+    public hangTP() {
+        super();
+        ngaysx = 0;
+        ngayhh = 0;
+    }
+
+    public hangTP(int ngaysx, int ngayhh, String mahang, String tenhang, long doniga) {
+        super(mahang, tenhang, doniga);
+        this.ngaysx = ngaysx;
+        this.ngayhh = ngayhh;
+    }
+
+    public int getNgaysx() {
+        return ngaysx;
+    }
+
+    public void setNgaysx(int ngaysx) {
+        this.ngaysx = ngaysx;
+    }
+
+    public int getNgayhh() {
+        return ngayhh;
+    }
+
+    public void setNgayhh(int ngayhh) {
+        this.ngayhh = ngayhh;
+    }
+
+    @Override
+    public void nhap() {
+        try {
+            System.out.println("nhap vao mat hang THUC PHAM");
+            super.nhap();
+            Scanner sc = new Scanner(System.in);
+            System.out.println("nhap vao ngay san xuat ");
+            ngaysx = sc.nextInt();
+            setNgaysx(ngaysx);
+            System.out.println("nhap vao ngayHH ");
+            ngayhh = sc.nextInt();
+            setNgayhh(ngayhh);
+        } catch (Exception e) {
+            System.out.println("bi loi" + e.toString());
+        }
+    }
+
+    @Override
+    public void xuat() {
+        super.xuat();
+        System.out.println(" ngay san xuat = " + getNgaysx() + "\t" + " ngayHH = " + getNgayhh());
+    }
+}
+
+class tuan5_bai1 {
+
+    public static void main(String[] args) {
+        Hanghoa p1 = new hangDM(); // tinh da hinh
+        Hanghoa p2 = new hangTP();
+        p1.nhap();
+        p1.xuat();
+        p2.nhap();
+        p2.xuat();
+    }
+}
+
+
+import java.util.*;
+
+class Connguoi {
+    private String hoten;
+    private int namsinh;
+
+    public Connguoi() {
+        hoten = " ";
+        namsinh = 0;
+    }
+
+    public Connguoi(String hoten, int namsinh) {
+        this.hoten = hoten;
+        this.namsinh = namsinh;
+    }
+
+    public String getHoten() {
+        return hoten;
+    }
+
+    public void setHoten(String hoten) {
+        this.hoten = hoten;
+    }
+
+    public int getNamsinh() {
+        return namsinh;
+    }
+
+    public void setNamsinh(int namsinh) {
+        this.namsinh = namsinh;
+    }
+
+    public void nhap() {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("nhap vao ho ten ");
+            hoten = sc.nextLine();
+            setHoten(hoten);
+            System.out.println("nhap vao nam sinh ");
+            namsinh = sc.nextInt();
+            setNamsinh(namsinh);
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    public void xuat() {
+        System.out.println("ho ten = " + getHoten() + "\t" + " nam sinh = " + getNamsinh());
+    }
+}
+
+class hocvien extends Connguoi {
+    private int diem1;
+    private int diem2;
+    private int diem3;
+
+    public hocvien() {
+        super();
+        diem1 = 0;
+        diem2 = 0;
+        diem3 = 0;
+    }
+
+    public hocvien(int diem1, int diem2, int diem3, String hoten, int namsinh) {
+        super(hoten, namsinh);
+        this.diem1 = diem1;
+        this.diem2 = diem2;
+        this.diem3 = diem3;
+    }
+
+    public int getDiem1() {
+        return diem1;
+    }
+
+    public void setDiem1(int diem1) {
+        this.diem1 = diem1;
+    }
+
+    public int getDiem2() {
+        return diem2;
+    }
+
+    public void setDiem2(int diem2) {
+        this.diem2 = diem2;
+    }
+
+    public int getDiem3() {
+        return diem3;
+    }
+
+    public void setDiem3(int diem3) {
+        this.diem3 = diem3;
+    }
+
+    @Override
+    public void nhap() {
+        try {
+            System.out.println("NHAP VAO THONG TIN HOC VIEN");
+            super.nhap();
+            Scanner sc = new Scanner(System.in);
+            System.out.println("nhap vao diem 1 ");
+            diem1 = sc.nextInt();
+            setDiem1(diem1);
+            System.out.println("nhap vao diem 2 ");
+            diem2 = sc.nextInt();
+            System.out.println("nhap vao diem 3 ");
+            diem3 = sc.nextInt();
+            setDiem3(diem3);
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    @Override
+    public void xuat() {
+        System.out.println("THONG TIN HOC VIEN VUA NHAP  ");
+        super.xuat();
+        System.out
+                .println("diem 1 = " + getDiem1() + "\t" + " diem 2 = " + getDiem2() + "\t" + "diem 3 = " + getDiem3());
+    }
+}
+
+class phongbankhoa {
+    private String maPBK;
+    private String tenPBK;
+
+    public phongbankhoa() {
+        maPBK = " ";
+        tenPBK = " ";
+    }
+
+    public phongbankhoa(String maPBK, String tenPBK) {
+        this.maPBK = maPBK;
+        this.tenPBK = tenPBK;
+    }
+
+    public String getMaPBK() {
+        return maPBK;
+    }
+
+    public void setMaPBK(String maPBK) {
+        this.maPBK = maPBK;
+    }
+
+    public String getTenPBK() {
+        return tenPBK;
+    }
+
+    public void setTenPBK(String tenPBK) {
+        this.tenPBK = tenPBK;
+    }
+
+    public void nhap() {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("nhap vao MA PBK ");
+            maPBK = sc.nextLine();
+            setMaPBK(maPBK);
+            System.out.println("nhap vao ten PBK ");
+            tenPBK = sc.nextLine();
+            setTenPBK(tenPBK);
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    public void xuat() {
+        System.out.println("MA PBK = " + getMaPBK() + "\t" + " ten PBK = " + getTenPBK());
+    }
+}
+
+class nhanvien extends Connguoi {
+    private int luong;
+    private int ngaynhanviec;
+    phongbankhoa Pbk;
+
+    public nhanvien() {
+        super();
+        luong = 0;
+        ngaynhanviec = 0;
+    }
+
+    public nhanvien(int luong, int ngaynhanviec, phongbankhoa Pbk, String hoten, int namsinh) {
+        super(hoten, namsinh);
+        this.luong = luong;
+        this.ngaynhanviec = ngaynhanviec;
+        this.Pbk = Pbk;
+    }
+
+    public int getLuong() {
+        return luong;
+    }
+
+    public void setLuong(int luong) {
+        this.luong = luong;
+    }
+
+    public int getNgaynhanviec() {
+        return ngaynhanviec;
+    }
+
+    public void setNgaynhanviec(int ngaynhanviec) {
+        this.ngaynhanviec = ngaynhanviec;
+    }
+
+    public void nhap() {
+        try {
+            System.out.println("NHAP VAO THONG TIN 1 HOC VIEN");
+            super.nhap();
+            Scanner sc = new Scanner(System.in);
+            System.out.println("nhap vao luong ");
+            luong = sc.nextInt();
+            setLuong(luong);
+            System.out.println("nhap vao ngay nhan viec ");
+            ngaynhanviec = sc.nextInt();
+            setNgaynhanviec(ngaynhanviec);
+            Pbk = new phongbankhoa();
+            Pbk.nhap();
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    public void xuat() {
+        System.out.println("THONG TIN HOC VIEN VUA NHAP ");
+        super.xuat();
+        System.out.println("luong = " + getLuong() + "\t" + " ngay nhan viec = " + getNgaynhanviec());
+        Pbk.xuat();
+    }
+}
+
+class tuan6_bai1 {
+    public static void main(String[] args) {
+        Connguoi p1 = new hocvien();
+        p1.nhap();
+        p1.xuat();
+        Connguoi p2 = new nhanvien();
+        p2.nhap();
+        p2.xuat();
+    }
+}
+
+
+import java.util.*;
+
+abstract class Nhanvien {
+
+    private String manv;
+    private String tennv;
+    private String trinhdo;
+
+    abstract void luongcb();
+
+    public Nhanvien() {
+        manv = " ";
+        tennv = " ";
+        trinhdo = " ";
+    }
+
+    public Nhanvien(String manv, String tennv, String trinhdo) {
+        this.manv = manv;
+        this.tennv = tennv;
+        this.trinhdo = trinhdo;
+    }
+
+    public String getManv() {
+        return manv;
+    }
+
+    public void setManv(String manv) {
+        this.manv = manv;
+    }
+
+    public String getTennv() {
+        return tennv;
+    }
+
+    public void setTennv(String tennv) {
+        this.tennv = tennv;
+    }
+
+    public String getTrinhdo() {
+        return trinhdo;
+    }
+
+    public void setTrinhdo(String trinhdo) {
+        this.trinhdo = trinhdo;
+    }
+
+    public void nhap() {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("nhap vao ma nv ");
+            manv = sc.nextLine();
+            setManv(manv);
+            System.out.println("nhap vao ten nv ");
+            tennv = sc.nextLine();
+            setTennv(tennv);
+            System.out.println("nhap vao trinh do ");
+            trinhdo = sc.nextLine();
+            setTrinhdo(trinhdo);
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    public void xuat() {
+        System.out.println(
+                "ma nv = " + getManv() + "\t" + " ten nv = " + getTennv() + "\t" + "trinh do= " + getTrinhdo());
+    }
+}
+
+class NVQL extends Nhanvien {
+
+    private String chuyenmon;
+    private int phucapcv;
+
+    public NVQL() {
+        super();
+        chuyenmon = " ";
+        phucapcv = 0;
+    }
+
+    public NVQL(String chuyenmuon, int phucapcv, String manv, String tennv, String trinhdo) {
+        super(manv, tennv, trinhdo);
+        this.chuyenmon = chuyenmuon;
+        this.phucapcv = phucapcv;
+    }
+
+    public String getChuyenmuon() {
+        return chuyenmon;
+    }
+
+    public void setChuyenmuon(String chuyenmuon) {
+        this.chuyenmon = chuyenmuon;
+    }
+
+    public int getPhucapcv() {
+        return phucapcv;
+    }
+
+    public void setPhucapcv(int phucapcv) {
+        this.phucapcv = phucapcv;
+    }
+
+    public void nhap() {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("NAP VAO THONG TIN NVQL ");
+            super.nhap();
+            System.out.println("nhap vao chuyen mon ");
+            chuyenmon = sc.nextLine();
+            setChuyenmuon(chuyenmon);
+            System.out.println("nhap vao phucapcv ");
+            phucapcv = sc.nextInt();
+            setPhucapcv(phucapcv);
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    public void xuat() {
+        super.xuat();
+        System.out.println("chuyen mon = " + getChuyenmuon() + "\t" + " phucapcv = " + getPhucapcv());
+    }
+
+    @Override
+    public void luongcb() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap vao luong cb");
+        long luong = sc.nextInt();
+        long tongluong = 0;
+        tongluong = luong + phucapcv;
+        System.out.println("Tong luong cua NVQL = " + tongluong);
+    }
+}
+
+class NVNC extends Nhanvien {
+
+    private String chuyenmon;
+    private int phucapdh;
+
+    public NVNC() {
+        super();
+        chuyenmon = " ";
+        phucapdh = 0;
+    }
+
+    public String getChuyenmon() {
+        return chuyenmon;
+    }
+
+    public void setChuyenmon(String chuyenmon) {
+        this.chuyenmon = chuyenmon;
+    }
+
+    public int getphucapdh() {
+        return phucapdh;
+    }
+
+    public void setphucapdh(int phucapdh) {
+        this.phucapdh = phucapdh;
+    }
+
+    public void nhap() {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("NHAP VAO THONG TIN NVNC ");
+            super.nhap();
+            System.out.println("nhap vao chuyen mon ");
+            chuyenmon = sc.nextLine();
+            setChuyenmon(chuyenmon);
+            System.out.println("nhap vao phucapdh ");
+            phucapdh = sc.nextInt();
+            setphucapdh(phucapdh);
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    public void xuat() {
+        super.xuat();
+        System.out.println("chuyen mon = " + getChuyenmon() + "\t" + " phucapcv = " + getphucapdh());
+    }
+
+    @Override
+    public void luongcb() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap vao luong cb");
+        long luong = sc.nextInt();
+        long tongluong = 0;
+        tongluong = luong + phucapdh;
+        System.out.println("Tong luong cua NVQL = " + tongluong);
+    }
+}
+
+class NVPV extends Nhanvien {
+
+    @Override
+    public void nhap() {
+        try {
+            System.out.println("NAP VAO THONG TIN NVPV ");
+            super.nhap();
+        } catch (Exception e) {
+            System.out.println("bi loi " + e.toString());
+        }
+    }
+
+    @Override
+    public void xuat() {
+        super.xuat();
+    }
+
+    @Override
+    public void luongcb() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap vao luong cb");
+        long luong = sc.nextInt();
+        System.out.println("Tong luong cua NVQL = " + luong);
+    }
+}
+
+class tuan7_bai1 {
+
+    public static void main(String[] args) {
+        NVQL p1 = new NVQL();
+        p1.nhap();
+        p1.xuat();
+        p1.luongcb();
+        NVNC p2 = new NVNC();
+        p2.nhap();
+        p2.xuat();
+        p2.luongcb();
+        NVPV p3 = new NVPV();
+        p3.nhap();
+        p3.xuat();
+        p3.luongcb();
+    }
+}
+
+/**
+ * @(#)tuan_9.java
+ *
+ * tuan_9 application
+ *
+ * @author 
+ * @version 1.00 2019/7/15
+ */
+import java.util.*;
+
+public class tuan9_bai1 {
+
+    private int[] a;
+    private int n;
+    private int max = 100;
+    private int temp;
+    private int x;
+    private int k;
+
+    public tuan9_bai1() {
+
+        a = new int[max]; // cap phat vung bo nho
+    }
+
+    public tuan9_bai1(tuan9_bai1 mang, int[] a, int n, int temp, int x, int k) {
+        this.a = a;
+        this.n = n;
+        this.temp = temp;
+        this.x = x;
+        this.k = k;
+        n = mang.n; // gan n cua mang qua n cua doi tuong can sao chep
+        a = new int[max]; // cap phat lai vung bo nho
+    }
+
+    void nhapmang() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("nhap so phan tu mang: ");
+        n = scanner.nextInt();
+        System.out.println("Nhap gia tri cho cac phan tu: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print("a[" + i + "] = ");
+            a[i] = scanner.nextInt();
+        }
+    }
+
+    void xuatmang() {
+        System.out.println("mang : ");
+        for (int i = 0; i < n; i++) {
+
+            System.out.print(a[i] + "\t");
+        }
+    }
+
+    void sapxep() {
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j <= n - 1; j++) {
+                if (a[j] < a[i]) {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+        System.out.println("\nsau khi sap xep");
+    }
+
+    void chen() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n nhap so can chen: ");
+        x = scanner.nextInt();
+        System.out.println("nhap vi tri can chen : ");
+        k = scanner.nextInt();
+        for (int j = n; j > k; j--) {
+            a[j] = a[j - 1];
+        }
+        a[k] = x;
+        n++;
+        xuatmang();
+    }
+
+    public static void main(String[] args) {
+        tuan9_bai1 a = new tuan9_bai1();
+        a.nhapmang();
+        a.xuatmang();
+        a.sapxep();
+        a.xuatmang();
+        a.chen();
+    }
+}
