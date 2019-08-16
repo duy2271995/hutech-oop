@@ -1,8 +1,26 @@
 import java.util.*;
 
 public class bai33 {
+
+    public static String chuyenInHoa(String str) {
+        String s, strOutput;
+        s = str.substring(0, 1);
+        strOutput = str.replaceFirst(s, s.toUpperCase());
+        return (strOutput);
+    }
+    
+    public static String chuanHoa(String strInput) {
+        String strOutput = "";
+        StringTokenizer strToken = new StringTokenizer(strInput, " ,\t,\r");
+        strOutput += "" + chuyenInHoa(strToken.nextToken());
+        while (strToken.hasMoreTokens()) {
+            strOutput += " " + chuyenInHoa(strToken.nextToken());
+        }
+        return (strOutput);
+    }
+
     public static String doiViTri(String strInput) {
-        String str = Bai31.chuanHoa(strInput);
+        String str = chuanHoa(strInput);
         StringTokenizer strToken = new StringTokenizer(str, " ");
         String ho = strToken.nextToken();
         String hoDem = strToken.nextToken();
